@@ -1,0 +1,25 @@
+# 登录接口
+- # test01密码错误登录失败
+  detail: 用户名或者密码错误
+  data:
+    username: "20200015"
+    password: "123456"
+  resq:
+    code: 400
+    message: "密码错误"
+- # test02用户名为空
+  detail: 用户名为空
+  data:
+    username: ""
+    password: "123456"
+  resq:
+    code: 400
+    message: "用户名不存在"
+- # test03密码为空
+  detail: 密码为空
+  data:
+    username: "20154084"
+    password: ""
+  resq:
+    code: 400
+    message: "密码错误"
